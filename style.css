@@ -18,11 +18,14 @@ body {
 }
 
 .container {
-    background-image: url('./images/overlay.png');
+    background-image: url('./images/hero-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     height: 100vh;
+    /* background-color: white; */
+    opacity: 0.9;
+    z-index: -1;
 }
 
 
@@ -30,6 +33,7 @@ body {
     background-color: #eef0f2;
     height: 60px;
     width: 60px;
+    z-index: 10;
     border-radius: 500px;
     display: flex;
     justify-content: center;
@@ -250,4 +254,333 @@ body {
 .container3 {
     width: 100%;
     height: 100vh;
+}
+.resume-section h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.resume-section .job,
+.resume-section .education {
+    margin-bottom: 20px;
+}
+
+.resume-section .job h3,
+.resume-section .education h3 {
+    font-weight: bold;
+}
+
+.resume-section .job h4,
+.resume-section .education h4 {
+    font-style: italic;
+}
+
+.job-duration,
+.education-duration {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.resume-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.resume-content {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.resume-container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%; 
+}
+.text-box{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+.resume-container i{
+    position: absolute;
+    width: 40%;
+    border-radius: 50%;
+    right: -150px;
+    top: 10px;
+    z-index: 10;
+}
+.right-container i{
+    left: -10px;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: black;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+.text-box h2{
+    font-weight: 600;
+}
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;border-left: 15px solid ;
+    right: -15px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(20, 20, 20);
+    left: -15px;
+}
+
+
+/* To be done */
+.container4 {
+    width: 100%;
+    height: 100vh;
+    background-color: #eaf5fe;
+}
+
+.container5 {
+    width: 100%;
+    height: 100vh;
+    background-color: #eaf5fe;
+}
+.container6 {
+    width: 100%;
+    height: 100vh;
+}
+
+.cnt {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+.ct-links {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    padding-left: 50px;
+}
+
+.ct-forms {
+    /* background-color: blue; */
+    width: 50%;
+    height: 100%;
+}
+
+.link-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.link {
+    display: flex;
+}
+
+.link-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: #eaf5fe;
+    padding: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    height: 30px;
+}
+
+.link-text {
+    font-size: 20px;
+    color: #3a4751;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+.link-desc {
+    font-size: 12px;
+    color: #72808c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 8px;
+    border: 3px solid #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #333;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav-btn {
+        width: auto;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .nav-btn .nav-data {
+        display: block;
+    }
+
+    .hero {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .hero-name {
+        font-size: 24px;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+    }
+
+    .socials {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container2,
+    .container3,
+    .container4,
+    .container5,
+    .container6 {
+        height: auto;
+    }
+
+    .cnt {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .ct-links,
+    .ct-forms {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+}
+.footer {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    /* height: 200px; */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer svg{
+    color: white;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.footer-social-icons a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #55acee;
+    text-decoration: none;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+    }
 }
